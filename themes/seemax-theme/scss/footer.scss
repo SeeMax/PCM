@@ -1,0 +1,172 @@
+@import "colors";
+
+.footer {
+	position: relative;
+	font-size:14px;
+	background: black;
+	color:white;
+
+	.content {
+		margin: 0px auto;
+		padding:0px 25px;
+	}
+
+	a {
+		text-decoration: none;
+
+		&:hover {
+
+		}
+	}
+
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		padding:20px;
+		margin:0;
+	}
+
+	li {
+		width:auto;
+		padding-left:0;
+
+		&:before {
+			content:"";
+		}
+
+		&:hover {
+
+		}
+	}
+
+	i {
+		font-size:22px;
+		margin-right:8px;
+		transition:all .3s;
+
+		&:hover {
+			transform:translateY(-1px);
+		}
+	}
+
+	.menu {
+		width:100%;
+
+		ul {
+			margin:0;
+			padding:0;
+		}
+	}
+
+	.footer-tile {
+		margin:20px 0;
+	}
+
+	.footer-tile-header {
+		text-transform: uppercase;
+		font-weight:700;
+	}
+
+	.logo-tile {
+
+		.logo-li {
+
+		}
+
+		img {
+			width:auto;
+			height:80px;
+		}
+	}
+
+	.social-tile {
+
+		.social-li {
+
+		}
+	}
+
+	.subscribe-tile {
+
+		li {
+
+		}
+
+		.mailchimp-signup-form {
+			width:100%;
+			margin-top:6px;
+
+			textarea, input {
+				-webkit-appearance: none;
+				outline: none;
+				border:0px solid white;
+				border-radius:0;
+			}
+
+			.mc-field-group {
+				width:100%;
+				margin-bottom:3px;
+
+				input {
+					width:100%;
+					padding:8px 10px;
+				}
+			}
+		}
+
+		.seemax-button {
+			cursor: pointer;
+
+			&:hover {
+
+			}
+		}
+	}
+
+	.copyright {
+		background:gray;
+		width:100%;
+		text-align:center;
+		padding:8px 25px;
+		font-size: 0.8em;
+		color:white;
+	}
+}
+
+// 1024px And Below
+@media screen and (max-width: 1024px){
+
+	.footer {
+
+	}
+}
+
+
+// 767px And Below
+@media screen and (max-width: 767px){
+
+	.footer {
+
+		.footer-tile {
+			margin:0;
+
+			&:nth-child(1) {
+				margin-top:30px;
+			}
+
+			&:nth-last-child(1) {
+				margin-bottom:40px;
+			}
+		}
+
+		.logo-tile {
+
+			img {
+				width:auto;
+				height:120px;
+			}
+		}
+
+	}
+}

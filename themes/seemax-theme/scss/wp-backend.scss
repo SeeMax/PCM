@@ -1,0 +1,16 @@
+.wp-core-ui {
+
+  li {
+    &:before {
+      content:"";
+    }
+  }
+
+  a {
+    
+  }
+
+  * {
+    border-radius: 0 !important;
+  }
+}
