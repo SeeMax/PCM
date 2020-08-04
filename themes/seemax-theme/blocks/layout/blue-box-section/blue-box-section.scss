@@ -1,0 +1,74 @@
+$black:#000000;
+$white:#FFFFFF;
+$gray:#2E2E2E;
+$offWhite:#EFEFEF;
+$logoBlue:#2D597E;
+$logoLightBlue:#2887BC;
+$blue:#0090FF;
+$orange:#FA6700;
+$lightOrange:#FA9500;
+
+.blue-box-section {
+  z-index:2;
+  margin-bottom:70px;
+  
+  .content {
+  
+  }
+
+  .h1 {
+    margin-bottom:18px;
+  }
+
+  p {
+    margin-top:22px;
+  }
+
+  li {
+    margin-bottom:15px;
+  }
+
+  .blue-blue-box {
+
+  }
+
+
+  .blue-box-text {
+    padding:50px 65px 65px 0;
+  }
+
+  .blue-box-container {
+    padding:65px;
+  }
+}
+  
+
+
+
+
+// 1024px And Below
+@media screen and (max-width: 1024px){
+
+  .blue-box-section {
+
+
+    .content {
+
+    }
+  }
+}
+
+// 767px And Below
+@media screen and (max-width: 767px){
+
+  .blue-box-section {
+
+    .blue-box-text {
+      padding:0px 0px 45px 0;
+    }
+
+    .blue-box-container {
+      padding:55px 30px;
+    }
+  }
+}

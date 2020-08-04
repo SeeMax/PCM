@@ -1,73 +1,98 @@
+$black:#000000;
+$white:#FFFFFF;
+$gray:#2E2E2E;
+$offWhite:#EFEFEF;
+$logoBlue:#2D597E;
+$logoLightBlue:#2887BC;
+$blue:#0090FF;
+$orange:#FA6700;
+$lightOrange:#FA9500;
+
 .hero-section {
-  min-height: 350px;
-  max-height: 550px;
-  overflow: hidden;
-
-  .hero-color-overlay {
-    background: blue;
-    opacity:.5;
-  }
-
+  z-index:2;
+  
   .content {
+    text-align: center;
     align-content: center;
     align-items: center;
-    min-height: 350px;
+    justify-content: center;
+    max-width:880px;
+    padding-top:100px;
   }
 
-  .hero-image-slider-container {
-    position: absolute;
-    top:0;
-    left:50%;
-    transform: translateX(-50%);
-    margin:0 auto;
+  h1 {
+    margin-bottom:18px;
+  }
+
+  p {
+    margin-top:22px;
+  }
+
+  .hr-container {
     width:100%;
-    min-width:1000px;
-    height:100%;
-    // height:auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    height:auto;
+  }
 
-    .slick-list, .slick-track, .slick-slide{
-      // margin:0 auto;
-    }
+  hr {
+    text-align: center;
+    display: block;
+    margin:0 auto;
+  }
 
-    .slick-list {
-      width:100%;
-    }
+  .seemax-button {
+    margin-top:26px;
+  }
 
-    img {
-      min-width:100%;
+  .contact-links {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    width:100%;
+
+    a {
+      color:$gray;
     }
+  }
+
+  .single-contact-link {
+    margin-top:40px;
+  }
+
+  .contact-subtitle {
+    width:100%;
+    color:$lightOrange;
+  }
+}
+
+.blue-hero {
+  padding:95px 50px;
+  // font-weight:400;
+
+  .content {
+    max-width:1060px;
+    padding:50px 40px 45px 40px;
   }
 
   h1 {
     color:white;
-    margin:0 auto;
   }
 }
 
-// Make Homepage Hero a Little Taller - SeeMax
-.home {
-
-  .hero-section {
-    min-height: 450px;
-
-    .content {
-      min-height: 450px;
-    }
-  }
+.blue-hero-container {
+  max-width:550px;
 }
+
 
 
 // 1024px And Below
 @media screen and (max-width: 1024px){
 
   .hero-section {
-    min-height: 250px;
+
 
     .content {
-      min-height: 250px;
+
     }
   }
 }
@@ -77,5 +102,14 @@
 
   .hero-section {
 
+  }
+
+  .blue-hero {
+    padding:75px 24px;
+
+    .content {
+      max-width:1060px;
+      padding:60px 26px 70px 26px;
+    }
   }
 }

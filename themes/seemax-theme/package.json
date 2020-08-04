@@ -1,18 +1,35 @@
 {
-  "name": "fug_theme",
+  "name": "seemax-theme",
   "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.babel.js",
+  "dependencies": {
+    "autoprefixer": "^9.8.0",
+    "del": "^5.1.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "jquery": "^3.5.1",
+    "jshint": "^2.11.1",
+    "yargs": "^15.3.1"
+  },
   "devDependencies": {
-    "browser-sync": "*",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "*",
-    "gulp-clean-css": "^3.9.0",
-    "gulp-concat-util": "*",
-    "gulp-jshint": "^2.0.4",
-    "gulp-load-plugins": "^1.5.0",
-    "gulp-sass": "*",
-    "gulp-uglify": "^3.0.0",
-    "jshint": "^2.9.5",
-    "jshint-stylish": "^2.2.1",
-    "pump": "^1.0.2"
-  }
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/register": "^7.10.5",
+    "babel-loader": "^8.1.0",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "vinyl-named": "^1.1.0",
+    "webpack-stream": "^5.2.1"
+  },
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build --prod"
+  },
+  "author": "",
+  "license": "ISC"
 }

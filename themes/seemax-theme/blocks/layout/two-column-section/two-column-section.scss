@@ -1,0 +1,144 @@
+$black:#000000;
+$white:#FFFFFF;
+$gray:#2E2E2E;
+$offWhite:#EFEFEF;
+$logoBlue:#2D597E;
+$logoLightBlue:#2887BC;
+$blue:#0090FF;
+$orange:#FA6700;
+$lightOrange:#FA9500;
+
+.two-column-section {
+
+  .h1 {
+    margin-bottom:50px;
+  }
+
+  .colored-back {
+    position: absolute;
+    top:320px;
+    left:0;
+    height:600px;
+    width:100%;
+    background-color:$blue;
+  }
+
+  .orange-title {
+    color:$lightOrange;
+  }
+
+  .content {
+
+  }
+
+  .single-two-col {
+    display: flex;
+    flex-wrap:wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding:95px 60px 70px 60px;
+    width:calc(50% - 40px);
+    margin-bottom:60px;
+
+    &:nth-of-type(odd) {
+      margin-right:40px;
+    }
+
+    .two-col-label {
+      font-size:20px;
+      color:$lightOrange;
+      margin-bottom: 5px;
+    }
+    
+    img {
+      margin-bottom:50px;
+      width:100%;
+    }
+
+    p {
+      margin-bottom:50px;
+    }
+
+    .seemax-button {
+      display: inline-block;
+      margin-bottom:50px;
+    }
+  }
+}
+
+
+
+// 1024px And Below
+@media screen and (max-width: 1024px){
+  .two-column-section {
+  
+    .single-two-col {
+      justify-content: space-between;
+      padding:95px 60px 70px 60px;
+      width:100%;
+      margin-bottom:60px;
+
+      &:nth-of-type(odd) {
+        margin-right:0px;
+      }
+
+      .two-col-label {
+        
+      }
+      
+      img {
+        margin-bottom:50px;
+        width:calc(50% - 10px);
+
+
+        &:nth-of-type(odd) {
+          margin-right:20px;
+        }
+      }
+
+      p {
+        
+      }
+
+      .seemax-button {
+        display: inline-block;
+        margin-bottom:50px;
+      }
+    }
+  }
+}
+
+// 767px And Below
+@media screen and (max-width: 767px){
+
+  .two-column-section {
+
+    .single-two-col {
+      padding:55px 30px 20px 30px;
+      width:100%;
+      margin-bottom:60px;
+
+      .two-col-label {
+        font-size:16px;        
+      }
+      
+      img {
+        margin-bottom:30px;
+        width:100%;
+
+
+        &:nth-of-type(odd) {
+          margin-right:0px;
+        }
+      }
+
+      p {
+        margin-bottom:30px;
+      }
+
+      .seemax-button {
+        margin-bottom:30px;
+      }
+    }
+  }
+}

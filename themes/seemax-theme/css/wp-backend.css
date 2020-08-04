@@ -1,0 +1,80 @@
+.wp-core-ui {
+  color:black;
+}
+
+.wp-core-ui ul li {
+  width:auto;
+}
+
+.wp-core-ui ul li:before {
+  content:"" !important;
+}
+
+.wp-core-ui * {
+  border-radius: 0;
+}
+
+.wp-core-ui .diff-meta {
+  padding:0;
+  margin:5px;
+}
+
+.wp-core-ui .ui-slider-handle {
+  border-radius: 50% !important;
+  box-sizing: content-box;
+}
+
+.wp-core-ui .revisions-controls {
+  height:auto !important;
+}
+
+.wp-core-ui .revisions-controls .wp-slider {
+  top: -4px;
+}
+
+.wp-core-ui .revisions-controls input[type=checkbox] {
+  position: relative;
+  top: 1px;
+  vertical-align: middle;
+}
+  
+
+.wp-core-ui .components-modal__frame input[type=radio]:checked:before, 
+.wp-core-ui .components-popover input[type=radio]:checked:before, 
+.wp-core-ui .edit-post-header input[type=radio]:checked:before, 
+.wp-core-ui .edit-post-sidebar input[type=radio]:checked:before, 
+.wp-core-ui .edit-post-text-editor input[type=radio]:checked:before, 
+.wp-core-ui .edit-post-visual-editor input[type=radio]:checked:before, 
+.wp-core-ui .editor-post-publish-panel input[type=radio]:checked:before {
+  margin:0;
+}
+
+/* over ride for guttenberg block selector */
+.wp-core-ui .block-editor-block-types-list li {
+  width:33.33333%;
+}
+
+
+/* Guttenberg Styles */
+@media (min-width: 782px) {
+
+  .edit-post-sidebar {
+    width:350px;
+  }  
+}
+
+.wp-block {
+  max-width:100%;
+}
+
+.edit-post-visual-editor .block-editor-block-list__block {
+  margin:0;
+}
+
+.is-selected {
+  margin:14px 0 !important;
+}
+
+.block-editor-editor-skeleton__sidebar, .postbox-container {
+
+}

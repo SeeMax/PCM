@@ -1,0 +1,336 @@
+@import "colors";
+
+.header-phone-bar {
+	font-family: 'wotfard';
+	position: fixed; 
+	z-index:103;
+	top:0;
+	left:0;
+	height:35px;
+	width:100%;
+	font-size:15px;
+	font-weight:400;
+	color:white;
+	background:linear-gradient(90deg, $logoLightBlue, $blue 40%, $blue 60%, $logoLightBlue 100%);
+	text-transform: uppercase;
+
+	a {
+		color:white;
+		text-decoration: none;
+	}
+
+	.content {
+		height:100%;
+		text-align:center;
+		justify-content: center;
+		align-items:center;
+		align-content:center;
+		padding-top:0px;
+		padding-bottom:0px;
+		line-height:1;
+	}
+
+	i {
+		margin:0 10px;
+	}
+
+	.phone-rotate {
+		transform:rotate(90deg);
+	}
+}
+
+.header-spacer {
+	position:relative;
+	top:35px;
+	left:0;
+	height:175px;
+	width:100%;
+	z-index:-1;
+}
+
+.header {
+	position: fixed;
+	top:35px;
+	left:0;
+	height:140px;
+	width:100%;
+	font-family: 'wotfard', sans-serif;
+	font-size:20px;
+	background:white;
+	z-index:101;
+
+	.content {
+		position: relative;
+		height:100%;
+		padding-top:20px;
+		padding-bottom:20px;
+		justify-content: space-between;
+		align-content: center;
+		align-items:center;
+	}
+
+	a {
+		color:$gray;
+		text-decoration: none;
+	}
+
+	ul {
+		display: flex;
+		flex-wrap:wrap;
+	}
+
+	li {
+		width:auto;
+		margin-left:32px;
+		padding:10px 0;
+		border-bottom:2px solid white;
+		transition: all 0.3s ease;
+
+		&:before {
+			content:"";
+			display: none;
+		}
+
+		&:hover {
+			border-color:$blue;
+		}
+	}
+
+	.seemax-button {
+		background-color: $blue;
+		padding:0;
+		border-bottom:0px solid white;
+		
+		a {
+			display:inline-block;
+			padding:12px 22px 11px 22px;
+			color:white;
+		}
+	
+		&:hover {
+			background: $lightOrange;
+			a {
+	
+			}
+		}
+	}
+
+	.current-menu-item {
+		// font-weight: 500;
+		border-color:$blue;
+	}
+
+	.emergency-button {
+		background: linear-gradient(90deg, $lightOrange, $orange);
+		z-index:100;
+		position:fixed;
+		left:0px;
+		top:175px;
+		margin:0;
+
+		a {
+			transition:color .3s ease;
+			padding:12px 23px 14px 22px;
+		}
+
+		i {
+			position: relative;
+			margin-left:12px;
+			top:2px;
+			font-size:18px;
+		}
+
+		// <span class="phone-number">(301) 595-3700</span>
+		.phone-number {
+			margin-top:3px;
+			font-size:14px;
+			display: block;
+			width:auto;
+		}
+
+		&:hover {
+			background: linear-gradient(40deg, $lightOrange, $orange);
+			
+			a {
+				color:#bd0000;
+			}
+		}
+	}
+}
+
+
+.header-logo {
+	position: relative;
+	height:115px;
+	width:auto;
+
+	img {
+		height:100%;
+		width:auto;
+	}
+}
+
+.main-nav {
+
+	a {
+
+	}
+
+	ul {
+
+	}
+
+	li {
+
+	}
+}
+
+.mobile-menu {
+	display: none;
+}
+
+
+// 1024px And Below
+@media screen and (max-width: 1024px){
+
+	.header-spacer {
+		height:116px;
+	}
+
+	.header {
+		height:80px;
+		
+		.seemax-button {
+			background-color: $blue;
+			padding:0;
+			border-bottom:0px solid white;
+			
+			a {
+				display:inline-block;
+				padding:14px 22px 16px 22px;
+				color:white;
+			}
+		}
+
+		.emergency-button {
+			position: absolute;
+			top:auto;
+			bottom:0;
+			width:100%;
+			text-align: center;
+	
+			a {
+				padding:22px 40px 22px 40px;
+			}
+	
+			i {
+				// margin-left:15px;
+				// top:16px;
+				font-size:20px;
+			}
+	
+			.phone-number {
+				text-align: left;
+			}
+		}
+
+	}
+
+	.header-logo {
+		z-index:101;
+		height:55px;
+	}
+
+	.mobile-menu {
+		cursor: pointer;
+		display: block;
+		position: absolute;
+		// top is 1/2 of .header height minus height of .mobile-menu (which is span height + margin-top)
+		top:31px;
+		// right is equal to padding-right of .content
+		right:25px;
+		z-index:102;
+		width:24px;
+		height:auto;
+
+		span {
+			display: block;
+			height:1px;
+			width:100%;
+			margin:5px 0 0 0;
+			background-color: black;
+		}
+	}
+
+
+	.main-nav {
+		background: white;
+		position: fixed;
+		top:0;
+		left:100%;
+		height:100vh;
+		width:100%;
+		z-index:100;
+
+		.nav {
+
+		}
+
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			align-content: center;
+			height: 100vh;
+			width: 100%;
+			margin: 0;
+			padding: 116px 0px 200px 0px;
+		}
+
+		li {
+			font-size:1.3em;
+			margin-left:0px;
+			width:auto;
+			margin-top:0px;
+			transition: none;
+		}
+	}
+}
+
+
+// 767px And Below
+@media screen and (max-width: 767px){
+
+	.header {
+		font-size:18px;
+	}
+
+
+	.main-nav {
+		background: white;
+		position: fixed;
+		top:0;
+		left:100%;
+		height:100%;
+		width:100%;
+		z-index:100;
+
+		ul {
+			justify-content: flex-start;
+			padding: 110px 0px;
+		}
+
+		li {
+			font-size:1em;
+			margin:0px;
+			margin-bottom:10px;
+			padding:6px 0;
+		}
+
+		.seemax-button {
+			margin-top:20px;
+		}
+	}
+}

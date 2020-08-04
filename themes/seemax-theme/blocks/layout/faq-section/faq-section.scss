@@ -1,0 +1,47 @@
+$black:#000000;
+$white:#FFFFFF;
+$gray:#2E2E2E;
+$offWhite:#EFEFEF;
+$logoBlue:#2D597E;
+$logoLightBlue:#2887BC;
+$blue:#0090FF;
+$orange:#FA6700;
+$lightOrange:#FA9500;
+
+.faq-section {
+
+  .content {
+    
+  }
+
+  .h1 {
+    margin-bottom:50px;
+  }
+
+  .faqs-anchor {
+    transform:translateY(-160px);
+  }
+}
+
+
+// 1024px And Below
+@media screen and (max-width: 1024px){
+
+  .faq-section {
+
+    .content {
+
+    }
+  }
+}
+
+// 767px And Below
+@media screen and (max-width: 767px){
+
+  .faq-section {
+
+    .content {
+
+    }
+  }
+}

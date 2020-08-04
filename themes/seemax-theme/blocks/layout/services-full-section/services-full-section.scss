@@ -1,0 +1,238 @@
+$black:#000000;
+$white:#FFFFFF;
+$gray:#2E2E2E;
+$offWhite:#EFEFEF;
+$logoBlue:#2D597E;
+$logoLightBlue:#2887BC;
+$blue:#0090FF;
+$orange:#FA6700;
+$lightOrange:#FA9500;
+
+.services-full-section {
+  position: relative;
+  overflow:hidden;
+
+  .content {
+    background: white;
+    justify-content: center;
+    padding-top:110px;
+    padding-bottom:100px;
+  }
+
+  p {
+    margin-top:20px;
+  }
+
+  .seemax-button {
+    margin-top:34px;
+  }
+
+  .single-full-service {
+    position: relative;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    padding:0px 20px;
+    margin-bottom:240px;
+
+    &:nth-last-of-type(1) {
+      margin-bottom:0px;
+    }
+  }
+
+  .service-anchor {
+    position: absolute;
+    left:0;
+    width:100%;
+    height:0;
+    top:-275px;
+    z-index:999999999;
+  }
+
+  .service-info-area {
+    position: relative; 
+    width:100%;
+    height:auto;
+  }
+
+  .full-service-text-half {
+    position:relative;
+    z-index:2;
+    // left:4%;
+    padding:46px 50px 50px 50px;
+
+    .seemax-button {
+      display: inline-block;
+    }
+  }
+
+  .full-service-image-half {
+    position: absolute;
+    z-index:1;
+    right:0;
+    top:50%;
+    transform:translateY(-50%);
+    
+    img {
+      width:100%;
+      max-width: 100%;
+      margin-bottom: 0;
+      height:auto;
+    }
+  }
+}
+
+.services-subnav {
+  position: relative;
+  margin:0 auto;
+  width:100%;
+  height:auto;
+  height:auto;
+  font-weight:700;
+  font-size:13px;
+  background:$offWhite;
+  z-index:5;
+
+  .content {
+    width:100%; 
+    padding-bottom:30px !important;
+    padding-top:40px !important;
+    justify-content: space-between;
+  }
+
+   a {
+     text-decoration:none;
+     display: inline-block;
+     color:$blue;
+     font-size:17px;
+     font-weight:400;
+     margin-bottom:10px;
+   }
+}
+
+
+// 1024px And Below
+@media screen and (max-width: 1024px){
+
+  .services-full-section {
+
+    .content {
+      padding-top:50px;
+      padding-bottom:40px;
+      padding-left:0;
+      padding-right:0;
+    }
+
+
+    .single-full-service {
+      width:100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      align-content: flex-start;
+      padding:20px 40px;
+      margin-bottom:150px;
+    }
+
+    .service-anchor {
+      top:-250px;
+      
+    }
+      
+    .full-service-text-half {
+      width:90%;
+      position:relative;
+      z-index:2;
+      // left:4%;
+      padding:50px 50px 80px 50px;
+  
+      .seemax-button {
+        display: inline-block;
+      }
+    }
+  
+    .full-service-image-half {
+      width:60%;
+      left:40%;
+      position: relative;
+      z-index:1;
+      right:0;
+      top:0;
+      margin-top:-175px;
+      transform:translateY(0px);
+      
+      img {
+        width:100%;
+        max-width: 100%;
+        margin-bottom: 0;
+        height:auto;
+      }
+    }
+
+    .faq-section {
+      margin-top:40px;
+    }
+  }
+
+  .services-subnav {
+    width:100%;
+    height:auto;
+    height:auto;
+    font-weight:700;
+    font-size:13px;
+    background:$offWhite;
+    z-index:5;
+  
+    .content {
+      width:100%; 
+      padding-bottom:10px !important;
+      padding-top:20px !important;
+      justify-content: flex-start;
+
+      a {
+        font-size:15px;
+        margin-right:20px;
+      }
+    }
+  }
+}
+
+// 767px And Below
+@media screen and (max-width: 767px){
+
+  .services-full-section {
+
+
+    .content {
+      background: white;
+      justify-content: center;
+      padding-top:20px;
+      padding-bottom:20px;
+    }
+    
+
+    .single-full-service {
+      padding-left:24px;
+      padding-right:24px;
+      margin-bottom:120px;
+    }
+    
+    .full-service-text-half {
+      width:95%; 
+      padding:50px 30px 50px 30px;
+  
+      .seemax-button {
+        display: inline-block;
+      }
+    }
+  
+    .full-service-image-half {
+      width:90%;
+      left:10%;
+      margin-top:-40px;
+      transform:translateY(0);
+    }
+  }
+}

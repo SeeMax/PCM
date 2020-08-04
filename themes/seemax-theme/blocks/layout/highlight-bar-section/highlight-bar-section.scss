@@ -1,0 +1,135 @@
+$black:#000000;
+$white:#FFFFFF;
+$gray:#2E2E2E;
+$offWhite:#EFEFEF;
+$logoBlue:#2D597E;
+$logoLightBlue:#2887BC;
+$blue:#0090FF;
+$orange:#FA6700;
+$lightOrange:#FA9500;
+
+.highlight-bar-section {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom:-60px;
+  
+  .content {
+    width:auto;
+    margin:0;
+    background-color:#F4F4F4;
+    display: inline-flex;
+    justify-content: center;
+    align-items:flex-start;
+    align-content:flex-start;
+    padding-top:28px;
+    padding-bottom:27px;
+  }
+
+  h3 {
+    margin-bottom:4px;
+  }
+
+  p {
+    margin:0px;
+  }
+
+  .seemax-button {
+    display: inline-block;
+    background-color:$gray;
+    margin-top:5px;
+  }
+
+  .highlight-text {
+    display: inline-block;
+    margin-right:40px;
+    width:auto;
+    height:auto;
+  }
+}
+
+.blue-highlight-bar {
+  margin-bottom:70px;
+  width:100%;
+  justify-content: center;
+  
+  .content {
+    width:100%;
+    background-color:$blue;
+  }
+
+  h3, p {
+    width:auto;
+    color:white;
+  }
+}
+
+
+
+// 1024px And Below
+@media screen and (max-width: 1024px){
+
+  .highlight-bar-section {
+    margin-bottom:0px;
+
+
+    .content {
+      width:100%;
+      // justify-content:flex-start;
+      align-content: center;
+      align-items:center;
+    }
+  }
+
+  .blue-highlight-bar {
+    width:100%;
+
+    .content {
+      // justify-content:flex-start;
+      align-content: center;
+      align-items:center;
+    }
+
+    .highlight-text {
+      flex:1;
+    }
+  }
+}
+
+// 767px And Below
+@media screen and (max-width: 767px){
+
+  
+  .highlight-bar-section {
+
+
+    .content {
+      width:100%;
+      // justify-content:flex-start;
+      text-align: center;
+      align-content: center;
+      align-items:center;
+    }
+
+    .highlight-text {
+      margin-right:0px;
+    }
+
+    .seemax-button {
+      margin-top:20px;
+    }
+  }
+
+  .blue-highlight-bar {
+    width:100%;
+
+    .content {
+      // justify-content:flex-start;
+      align-content: center;
+      align-items:center;
+    }
+
+    .highlight-text {
+      flex:1;
+    }
+  }
+}

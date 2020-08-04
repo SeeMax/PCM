@@ -1,70 +1,75 @@
 <footer class="footer" role="contentinfo">
 	<div class="content">
 
-		<div class="footer-tile logo-tile c-width-25">
-			<ul>
-				<li class="logo-li">
-					<a href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" ></a>
-				</li>
-			</ul>
-		</div>
+		<ul class="footer-tile logo-tile c-width-16">
+			<li class="logo-li">
+				<a href="/"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo-white.svg" alt="<?php echo esc_attr( $image['alt'] ); ?>"></a>
+			</li>
+		</ul>
 
-		<div class="footer-tile footer-nav-tile c-width-25">
-			<ul>
-				<li class="footer-tile-header">
-					NAV
-				</li>
-				<?php $mainFootMenu = wp_nav_menu( array('theme_location' => 'footer-menu'));?>
-			</ul>
-		</div>
-
-		<div class="footer-tile social-tile c-width-25">
-			<ul>
-				<li class="footer-tile-header">
-					Social
-				</li>
-				<li class="social-li">
-					<a class="" href="<?php the_field('facebook', 'options');?>" target="_blank">
-						<i class="fab fa-facebook"></i>
-					</a>
-					<a class="" href="<?php the_field('twitter', 'options');?>" target="_blank">
-						<i class="fab fa-twitter"></i>
-					</a>
-					<a class="" href="<?php the_field('instagram', 'options');?>" target="_blank">
-						<i class="fab fa-instagram"></i>
-					</a>
-				</li>
-			</ul>
-		</div>
-
-		<div class="footer-tile subscribe-tile c-width-25">
-			<ul>
-				<li class="footer-tile-header">
-					Subscribe
-				</li>
+		<ul class="footer-tile address-tile c-width-25">
+			<li class="footer-tile-header">
+				Address
+			</li>
+			<?php if(get_field('contact_address', 'option')):?>
 				<li>
-					News Letter
-					<!-- Begin Mailchimp Signup Form -->
-					<form action="URL FROM MAILCHIMP" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="mailchimp-signup-form validate" target="_blank" novalidate>
-						<div class="mc-field-group">
-							<input type="email" placeholder="Email Address" name="EMAIL" class="required email" id="mce-EMAIL">
-						</div>
-						<div id="mce-responses" class="clear">
-							<div class="response" id="mce-error-response" style="display:none"></div>
-							<div class="response" id="mce-success-response" style="display:none"></div>
-						</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-				    <div style="position: absolute; left: -5000px;" aria-hidden="true">
-							<input type="text" name="ID FROM MAILCHIMP" tabindex="-1" value="">
-						</div>
-						<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="seemax-button">
-					</form>
+					<?php the_field('contact_address', 'option');?>
 				</li>
-				<!--End mc_embed_signup-->
-			</ul>
-		</div>
+			<?php endif;?>
+		</ul>
+
+		<ul class="footer-tile contact-tile c-width-27">
+			<li class="footer-tile-header">
+				Contact
+			</li>
+			<?php if(get_field('phone_number', 'option')):?>
+				<li>
+					<a href="tel:<?php the_field('phone_number', 'option');?>">
+						P: <?php the_field('phone_number', 'option');?>
+					</a>
+				</li>
+			<?php endif;?>
+			<?php if(get_field('fax_number', 'option')):?>
+				<li>
+					<a href="tel:<?php the_field('fax_number', 'option');?>">
+						F: <?php the_field('fax_number', 'option');?>
+					</a>
+				</li>
+			<?php endif;?>
+			<?php if(get_field('email_address', 'option')):?>
+				<li>
+					<a href="mailto:<?php the_field('contact_email', 'option');?>">
+						E: <?php the_field('email_address', 'option');?>
+					</a>
+				</li>
+			<?php endif;?>
+		</ul>
+		
+		<ul class="footer-tile footer-nav-tile c-width-16">
+			<li class="footer-tile-header">
+				Pages
+			</li>
+			<?php $mainFootMenu = wp_nav_menu( array('theme_location' => 'footer-menu'));?>
+		</ul>
+		
+		<ul class="footer-tile help-tile c-width-16">
+			<li class="footer-tile-header">
+				Help
+			</li>
+			<li class="help-li">
+				<a href="#estimate">
+					Get Estimate
+				</a>	
+			</li>
+			<li class="help-li">
+				<a href="tel:<?php the_field('phone_number', 'option');?>">
+					Emergency Service
+				</a>
+			</li>
+		</ul>
 	</div>
 	<div class="copyright">
-		&copy; Copyright <?php echo date("Y"); ?> <?php echo get_bloginfo();?>
+		&copy; Copyright <?php echo date("Y"); ?> <?php echo get_bloginfo();?> All Rights Reserved
 	</div>
 </footer>
 <?php wp_footer(); ?>

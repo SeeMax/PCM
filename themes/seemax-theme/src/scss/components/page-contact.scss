@@ -1,0 +1,70 @@
+@import "colors";
+
+
+.contact-page {
+
+  .hero-section {
+    font-weight:400;
+    font-family:"wotfard", sans-serif;
+
+    
+    h1 {
+      margin-bottom:20px;
+    }
+
+    p {
+      margin-top:calc(1em + 8px);
+      font-weight:400;
+      font-family:"wotfard", sans-serif;
+    }
+
+    .content {
+      justify-content: center;
+    }
+
+    .contact-links {
+      padding:50px;
+    }
+
+    .contact-subtitle {
+      color:$lightOrange;
+      font-weight:500;
+      line-height:1;
+    }
+
+    a {
+      display: block;
+      width:100%;
+      color:white;
+      text-decoration: underline;
+      margin-bottom:14px;
+    }
+  }
+}
+
+
+// 1024px And Below
+@media screen and (max-width: 1024px){
+
+  .contact-half {
+    width:50%;
+  }
+
+  .contact-title {
+    padding:25px 25px 25px 0px;
+  }
+}
+
+
+// 767px And Below
+@media screen and (max-width: 767px){
+
+
+  .contact-half {
+    width:100%;
+  }
+
+  .contact-title {
+    padding:0px 0px 40px 0px;
+  }
+}

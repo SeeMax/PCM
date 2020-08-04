@@ -13,8 +13,7 @@
    */
   var initializeBlock = function( $block ) {
       // $block.find('h1').css( "color", "blue" );
-      $( ".sub-hero-section" ).next().addClass( "post-sub-hero-section" );
-
+      $( ".hero-section").addClass( "seemax-hero" );
   };
 
   // Initialize each block on page load (front end).

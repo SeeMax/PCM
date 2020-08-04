@@ -1,21 +1,17 @@
 <div id="preloader">
-  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 107.3 70.7">
-    <g>
-    	<polygon class="f1 loaderBlue1" points="55.3,3.3 61,5.4 61,8.2 55.3,6.5"/>
-    	<polygon class="f2 loaderBlue1" points="55.3,9 61,10.8 61,13.6 55.3,11.9"/>
-    	<polygon class="f3 loaderBlue1" points="55.3,14.8 61,16.5 61,19.4 55.3,17.7"/>
-    	<polygon class="f1 loaderBlue1" points="55.3,20.6 61,22.3 61,24.8 55.3,23.4"/>
-    	<polygon class="f2 loaderBlue1" points="55.3,26.3 61,27.8 61,30.3 55.3,29.1"/>
-    	<polygon class="f3 loaderBlue1" points="55.3,32.1 61,33.1 61,35.7 55.3,34.7"/>
-    	<polygon class="f1 loaderBlue1" points="55.3,37.7 61,38.6 61,41.2 55.3,40.3"/>
-    	<polygon class="f2 loaderBlue1" points="55.3,43.5 61,44.4 61,46.7 55.3,46.2"/>
-    	<polygon class="f3 loaderBlue1" points="55.3,49.1 61,49.5 61,52.2 55.3,51.8"/>
-    	<polygon class="f1 loaderBlue1" points="55.3,54.7 61,55.1 61,57.7 55.3,57.3"/>
-    	<rect class="f2 loaderBlue1" x="55.3" y="60.6" width="5.7" height="2.6"/>
-    </g>
-    <g>
-    	<polygon class="f4 loaderBlue1" points="39,70.7 32.2,70.7 32.2,46.5 38.9,44.2"/>
-    	<polygon class="f4 loaderBlue1" points="49.1,47.3 41.5,45 41.4,4.7 49.2,0"/>
-    </g>
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1094.8 2687.6">
+    <polygon class="f1 loaderBlue1" points="878.1,125.4 1094.8,205.3 1094.8,311.7 878.1,247.1 "/>
+    <polygon class="f2 loaderBlue1" points="878.1,342.1 1094.8,410.6 1094.8,517 878.1,452.4 "/>
+    <polygon class="f3 loaderBlue1" points="878.1,562.6 1094.8,627.2 1094.8,737.5 878.1,672.8 "/>
+    <polygon class="f1 loaderBlue1" points="878.1,783.1 1094.8,847.7 1094.8,942.7 878.1,889.5 "/>
+    <polygon class="f2 loaderBlue1" points="878.1,999.8 1094.8,1056.8 1094.8,1151.8 878.1,1106.2 "/>
+    <polygon class="f3 loaderBlue1" points="878.1,1220.2 1094.8,1258.3 1094.8,1357.1 878.1,1319.1 "/>
+    <polygon class="f1 loaderBlue1" points="878.1,1433.1 1094.8,1467.3 1094.8,1566.2 878.1,1532 "/>
+    <polygon class="f2 loaderBlue1" points="878.1,1653.6 1094.8,1687.8 1094.8,1775.2 878.1,1756.2 "/>
+    <polygon class="f3 loaderBlue1" points="878.1,1866.5 1094.8,1881.7 1094.8,1984.3 878.1,1969.1 "/>
+    <polygon class="f1 loaderBlue1" points="878.1,2079.4 1094.8,2094.6 1094.8,2193.4 878.1,2178.2 "/>
+    <rect class="f2 loaderBlue1" x="878.1" y="2303.6" width="216.7" height="98.8"/>
+    <polygon class="f4 loaderBlue1" points="258.5,2687.6 0,2687.6 0,1767.6 254.7,1680.2 "/>
+    <polygon class="f4 loaderBlue1" points="642.4,1798.1 353.5,1710.6 349.7,178.7 646.2,0 "/>
   </svg>
 </div>
