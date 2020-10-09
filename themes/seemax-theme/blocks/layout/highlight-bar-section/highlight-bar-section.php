@@ -21,6 +21,7 @@
   $subheadline = get_field('subheadline');
   $addButton = get_field('add_a_button');
   $btnLabel = get_field('button_label');
+  $btnLabelCopy = get_field('button_label_copy');
   $btnDest = get_field('button_destination');
   $btnFileLink = get_field('button_file');
   $btnFile = $btnFileLink['url'];
@@ -34,10 +35,22 @@ class="<?php echo esc_attr($className);?>
   <div class="content">
     <div class="highlight-text">
       <?php if(get_field('headline')):?>
-        <h3><?php echo $headline; ?></h3>
+        <h3 class="english-language"><?php echo $headline; ?></h3>
+      <?php endif;?>
+      <?php if(get_field('headline_copy')):?>
+        <h3 class="spanish-language">
+          <?php the_field('headline_copy');?>
+        </h3>
       <?php endif;?>
       <?php if(get_field('subheadline')):?>
-        <p><?php echo $subheadline; ?></p>
+        <p class="english-language">
+          <?php echo $subheadline; ?>
+        </p>
+      <?php endif;?>
+      <?php if(get_field('subheadline_copy')):?>
+        <p class="spanish-language">
+          <?php the_field('subheadline_copy');?>
+        </p>
       <?php endif;?>
     </div>
 
@@ -49,7 +62,8 @@ class="<?php echo esc_attr($className);?>
           <a class="c-block-fill" target="_blank" href="<?php echo $btnFile;?>"></a>
         <?php endif;?>
           
-        <span><?php echo $btnLabel;?></span>
+        <span class="english-language"><?php echo $btnLabel;?></span>
+        <span class="spanish-language"><?php echo $btnLabelCopy;?></span>
       </div>
     <?php endif;?>
   </div>

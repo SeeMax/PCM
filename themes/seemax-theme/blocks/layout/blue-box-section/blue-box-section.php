@@ -20,23 +20,39 @@
   $body = get_field('body');
   $boxHeadline = get_field('box_headline');
   $boxBody = get_field('box_body');
+  $headlineCopy = get_field('headline_copy');
+  $bodyCopy = get_field('body_copy');
+  $boxHeadlineCopy = get_field('box_headline_copy');
+  $boxBodyCopy = get_field('box_body_copy');
 ?>
 <section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className);?> blue-shadow">
   <div class="content">
     <div class="blue-box-text c-width-40">
       <?php if($headline):?>
-        <h2 class="h1"><?php echo $headline; ?></h2>
+        <h2 class="h1 english-language"><?php echo $headline; ?></h2>
+      <?php endif;?>
+      <?php if($headlineCopy):?>
+        <h2 class="h1 spanish-language"><?php echo $headlineCopy; ?></h2>
       <?php endif;?>
       <?php if($body):?>
-        <p><?php echo $body; ?></p>
+        <p class="english-language"><?php echo $body; ?></p>
+      <?php endif;?>
+      <?php if($bodyCopy):?>
+        <p class="spanish-language"><?php echo $bodyCopy; ?></p>
       <?php endif;?>
     </div>
     <div class="blue-box-container c-width-60 blue-shadow">
       <?php if($boxHeadline):?>
-        <h3><?php echo $boxHeadline;?></h3>
+        <h3 class="english-language"><?php echo $boxHeadline;?></h3>
+      <?php endif;?>
+      <?php if($boxHeadlineCopy):?>
+        <h3 class="spanish-language"><?php echo $boxHeadlineCopy;?></h3>
       <?php endif;?>
       <?php if($boxBody):?>
-        <p><?php echo $boxBody;?></p>
+        <?php echo '<div class="english-language">' . $boxBody  . '</div>';?>
+      <?php endif;?>
+      <?php if($boxBodyCopy):?>
+        <?php echo '<div class="spanish-language">' . $boxBodyCopy  . '</div>';?>
       <?php endif;?>
     </div>  
   </div>

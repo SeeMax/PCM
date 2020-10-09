@@ -4,6 +4,7 @@ import {mailchimpScripts} from './loadMailchimpScripts.js';
 import {faqToggle, faqHeight } from './faqToggle.js';
 import {buildServicesNav, buildServicesLinks, pinServicesLinks} from './buildServiceMenu.js';
 import {faqSetup} from './fullServiceSetup.js';
+import {spanishToggle} from './spanishToggle.js';
 import {anchorClick, scrollPage} from './anchorLinks.js';
 
 $(window).on("load", function() {  
@@ -14,6 +15,8 @@ $(window).on("load", function() {
   extLinks();
   faqHeight();
   faqToggle();
+  spanishToggle();
+
   if ($('body').hasClass('page-services')) {
     buildServicesNav();
     buildServicesLinks();

@@ -12,18 +12,18 @@
 
   .slick-prev-arrow, .slick-next-arrow {
     position: absolute;
-    top:calc(100% - 100px);
-    left:80px;
-    height:20px;
-    cursor:pointer;
-    transition:opacity .3s ease;
+    top: 50%;
+    left: 0px;
+    height: 20px;
+    cursor: pointer;
+    transition: opacity .3s ease;
 
     svg {
       width:auto;
       height:100%;
       fill:none;
       stroke:black;
-      stroke-width:2;
+      stroke-width:7;
       stroke-miterlimit:10;
     }
 
@@ -34,7 +34,7 @@
 
   .slick-next-arrow {
     left:auto;
-    left:140px;
+    right:0;
   }
 
   .hero-carousel-container {

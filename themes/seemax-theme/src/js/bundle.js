@@ -7,5 +7,6 @@ import './components/estimatePopup.js';
 import './components/faqToggle.js';
 import './components/buildServiceMenu.js';
 import './components/fullServiceSetup.js';
+import './components/spanishToggle.js';
 import './components/readyFunctions.js';
 

@@ -21,26 +21,40 @@
     // Make sure it's not the wp-backend
     if (!$('body').hasClass("wp-admin")) {
 
-      $('.quote-carousel-section').each(function(){
+      $('.carousel-section').each(function(){
           initializeBlock( $(this) );
       });
 
-      $('.quoteCarouselContainer').slick({
-        autoplay:true,
-        autoplaySpeed:5000,
-        infinite: true,
-        speed: 200,
-        fade: true,
-        cssEase: 'linear',
-        prevArrow: $('.slick-prev-arrow'),
-        nextArrow: $('.slick-next-arrow'),
+      $('.carousel-section').each(function(){
+          
+        initializeBlock( $(this) );
+        
+        var thisCar = $(this).find('.carousel-container');
+        var thisPrev = $(this).find('.slick-prev-arrow');
+        var thisNext = $(this).find('.slick-next-arrow')
+        
+        $(thisCar).each(function(){    
+          var thisID = $(this).attr('id');
+          var thisContainer = '#'+thisID+'';
+
+          $(thisContainer).slick({
+            autoplay:true,
+            autoplaySpeed:5000,
+            infinite: true,
+            speed: 200,
+            // fade: true,
+            cssEase: 'linear',
+            prevArrow: $(thisPrev),
+            nextArrow: $(thisNext),
+          });
+        });
       });
     }
   });
 
   // Initialize dynamic block preview (editor).
   if( window.acf ) {
-      window.acf.addAction( 'render_block_preview/type=quote-carousel-section', initializeBlock );
+      window.acf.addAction( 'render_block_preview/type=carousel-section', initializeBlock );
   }
 
 })(jQuery);

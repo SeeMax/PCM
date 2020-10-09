@@ -18,9 +18,12 @@
   // Load values and assing defaults.
   $background = get_field('white_or_blue_background');
   $headline = get_field('headline') ?: strtoupper(get_the_title());
+  $headlineCopy = get_field('headline_copy');
   $body = get_field('body');
+  $bodyCopy = get_field('body_copy');
   $addButton = get_field('add_a_button');
   $btnLabel = get_field('button_label');
+  $btnLabelCopy = get_field('button_label_copy');
   $btnDest = get_field('button_destination');
   $addContact = get_field('add_contact');
 ?>
@@ -43,17 +46,24 @@ class="<?php echo esc_attr($className);?>
       </div>  
     <!-- The White-Back Content -->
     <?php else:?>  
-      <?php if(get_field('headline')):?>
-        <h1><?php echo $headline; ?></h1>
+      <?php if($headline):?>
+        <h1 class="english-language"><?php echo $headline; ?></h1>
+      <?php endif;?>
+      <?php if($headlineCopy):?>
+        <h1 class="spanish-language"><?php echo $headlineCopy; ?></h1>
       <?php endif;?>
       <div class="hr-container"><hr></div>
-      <?php if(get_field('body')):?>
-        <p><?php echo $body; ?></p>
+      <?php if($body):?>
+        <p class="english-language"><?php echo $body; ?></p>
+      <?php endif;?>
+      <?php if($bodyCopy):?>
+        <p class="spanish-language"><?php echo $bodyCopy; ?></p>
       <?php endif;?>
       <?php if($addButton == 'yes'):?>
         <div class="seemax-button">
           <a class="c-block-fill" href="<?php echo $btnDest;?>"></a>
-          <span><?php echo $btnLabel;?></span>
+          <span class="english-language"><?php echo $btnLabel;?></span>
+          <span class="spanish-language"><?php echo $btnLabelCopy;?></span>
         </div>
       <?php endif;?>
       <?php if($addContact == 'yes'):?>
@@ -65,7 +75,8 @@ class="<?php echo esc_attr($className);?>
             </a>
           </div>
           <div class="single-contact-link c-width-33-3">
-            <div class="contact-subtitle">Phone</div> 
+            <div class="contact-subtitle english-language">Phone</div> 
+            <div class="contact-subtitle spanish-language">Teléfono</div>
             <a href="tel:<?php the_field('phone_number', 'option');?>">
               <?php the_field('phone_number', 'option');?>
             </a>

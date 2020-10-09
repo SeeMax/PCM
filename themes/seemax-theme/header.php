@@ -1,14 +1,14 @@
 <!doctype html>
 <html <?php language_attributes(); ?> class="no-js loader-class">
 <head>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXX-X"></script>
+	<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-81360467-1"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
 
-		gtag('config', 'UA-XXXXXXXXXX-X');
-	</script>
+		gtag('config', 'UA-81360467-1');
+	</script> -->
 
 	<meta charset="<?php bloginfo('charset'); ?>">
 

@@ -493,47 +493,47 @@ function seemax_blocks_create_post_type() {
     )
   );
 
-  register_post_type('events',
-    array(
-      'labels' => array(
-        'name' => __('Events'),
-        'singular_name' => __('Event')
-      ),
-      'public' => true,
-      'menu_icon' => 'dashicons-calendar-alt',
-      'has_archive' => true,
-      // 'show_in_rest' => true,
-      // 'supports' => array('title','editor'),
-    )
-  );
+  // register_post_type('events',
+  //   array(
+  //     'labels' => array(
+  //       'name' => __('Events'),
+  //       'singular_name' => __('Event')
+  //     ),
+  //     'public' => true,
+  //     'menu_icon' => 'dashicons-calendar-alt',
+  //     'has_archive' => true,
+  //     // 'show_in_rest' => true,
+  //     // 'supports' => array('title','editor'),
+  //   )
+  // );
 
-  register_post_type('books',
-    array(
-      'labels' => array(
-      'name' => __('Books'),
-      'singular_name' => __('Book')
-    ),
-    'public' => true,
-    'menu_icon' => 'dashicons-book-alt',
-    // 'has_archive' => true,
-    // 'show_in_rest' => true,
-    // 'supports' => array('title','editor'),
-    )
-  );
+  // register_post_type('books',
+  //   array(
+  //     'labels' => array(
+  //     'name' => __('Books'),
+  //     'singular_name' => __('Book')
+  //   ),
+  //   'public' => true,
+  //   'menu_icon' => 'dashicons-book-alt',
+  //   // 'has_archive' => true,
+  //   // 'show_in_rest' => true,
+  //   // 'supports' => array('title','editor'),
+  //   )
+  // );
 
-  register_post_type('quotes',
-    array(
-      'labels' => array(
-        'name' => __('Quotes'),
-        'singular_name' => __('Quote')
-      ),
-      'public' => true,
-      'menu_icon' => 'dashicons-format-quote',
-      // 'has_archive' => true,
-      // 'show_in_rest' => true,
-      // 'supports' => array('title','editor'),
-    )
-  );
+  // register_post_type('quotes',
+  //   array(
+  //     'labels' => array(
+  //       'name' => __('Quotes'),
+  //       'singular_name' => __('Quote')
+  //     ),
+  //     'public' => true,
+  //     'menu_icon' => 'dashicons-format-quote',
+  //     // 'has_archive' => true,
+  //     // 'show_in_rest' => true,
+  //     // 'supports' => array('title','editor'),
+  //   )
+  // );
 } add_action('init', 'seemax_blocks_create_post_type');
 
 

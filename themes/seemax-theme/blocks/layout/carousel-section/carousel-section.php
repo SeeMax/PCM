@@ -10,13 +10,13 @@
  */
 
 // Create id attribute allowing for custom "anchor" value.
-$id = 'quote-carousel-section-' . $block['id'];
+$id = 'carousel-section-' . $block['id'];
 if( !empty($block['anchor']) ) {
     $id = $block['anchor'];
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$className = 'quote-carousel-section';
+$className = 'carousel-section';
 if( !empty($block['className']) ) {
     $className .= ' ' . $block['className'];
 }
@@ -38,7 +38,7 @@ if( !empty($block['align']) ) {
         <polyline class="st0" points="0.4,70.4 35.4,35.4 0.4,0.4 "/>
       </svg>
     </div>
-    <div class="quote-carousel-container quoteCarouselContainer">
+    <div class="carousel-container quoteCarouselContainer">
       <?php $post1 = get_field('quotes_picked');
       if( $post1 ): ?>
         <?php foreach( $post1 as $p ): // variable must NOT be called $post (IMPORTANT) ?>
@@ -47,10 +47,10 @@ if( !empty($block['align']) ) {
           <?php $text = get_field('quote_text',$p->ID );?>
           <?php $image = get_field('quote_image',$p->ID );?>
           <div class="single-carousel-quote">
-            <div class="quote-image-part c-width-25">
+            <div class="carousel-image-part c-width-25">
               <img src="<?php echo $image['url'];?>" alt="<?php echo esc_attr( $image['alt'] ); ?>">
             </div>
-            <div class="quote-text-part c-width-75">
+            <div class="carousel-text-part c-width-75">
               <h2>"<?php echo $text;?>"</h2>
               <h4><?php echo $name;?>, <span><?php echo $title;?></span></h4>
             </div>

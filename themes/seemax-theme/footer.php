@@ -43,6 +43,20 @@
 					</a>
 				</li>
 			<?php endif;?>
+			<li class="social-li">
+			<a class="" href="<?php the_field('linkedin', 'options');?>" target="_blank">
+					<i class="fab fa-linkedin"></i>
+				</a>
+				<a class="" href="<?php the_field('facebook', 'options');?>" target="_blank">
+					<i class="fab fa-facebook"></i>
+				</a>
+				<a class="" href="<?php the_field('instagram', 'options');?>" target="_blank">
+					<i class="fab fa-instagram"></i>
+				</a>
+				<a class="" href="<?php the_field('twitter', 'options');?>" target="_blank">
+					<i class="fab fa-twitter"></i>
+				</a>
+			</li>
 		</ul>
 		
 		<ul class="footer-tile footer-nav-tile c-width-16">

@@ -250,6 +250,28 @@ input[type="email"] {
 	background:$blue;
 }
 
+.spanish-language {
+	display:none;
+}
+
+.spanish-button {
+	position:absolute;
+	width:auto;
+	min-width:190px;
+	top:20px;
+	color: $blue;
+	text-decoration:underline;
+	cursor:pointer;
+	left:100%;
+	transition:color .3s ease;
+	font-weight:400;
+	font-size:16px;
+
+	&:hover {
+		color:$orange;
+	}
+}
+
 
 // 1024px And Below
 @media screen and (max-width: 1024px){
@@ -264,6 +286,11 @@ input[type="email"] {
 
 	h3 {
 
+	}
+
+	.spanish-button {
+		left: auto;
+    right: 0;
 	}
 }
 
